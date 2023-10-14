@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 255, 229, 0.412);
+    display: flex;
+}
+.box{
+    margin-top: 10px;
+    margin-left: 10px;
+    width:100px;
+    height: 100px;
+    background-color: rgba(230, 223, 20, 0.804);
+    padding-top: 1.5rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.box .eye-c{
+    display: flex;
+    width: 80%;
+    height: 20px;
+    justify-content: space-between;
+}
+.box  .eye{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(42, 161, 165);
+    border: 2px solid black;
+}
+.nose{
+    height: 10px;
+    border:  2px solid rgb(255, 255, 255);
+}
+.mouth{
+    width: 65px;
+    background-color: rgb(212, 192, 8);
+    height: 10px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.circle{
+    border-radius: 15px;
+}
+.s{
+    color: aliceblue;
+    background-color: rgba(186, 144, 88,0.6);
+    position: absolute;
+    left: 90px;
+    width: 80px;
+    border-radius: 10px;
+}
+.live{
+    height: 30px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.speak{
+    color: aliceblue;
+    background-color: rgba(186, 144, 88,0.6);
+    position: absolute;
+    left: 90px;
+    width: 80px;
+    border-radius: 10px;
+}
+.speak::after{
+    content: "Can You Catch me";
+}
+.s::after{
+    content: "Can You Catch me";
+}
+body::-webkit-scrollbar{
+    display: none;
+}
